@@ -39,14 +39,6 @@ public class User {
         this.age = age;
     }
 
-    public ImageIcon getProfilePic() {
-        return profilePic;
-    }
-
-    public void setProfilePic(ImageIcon profilePic) {
-        this.profilePic = profilePic;
-    }
-
     @Override
     public String toString() {
        return name ;
@@ -58,7 +50,7 @@ public class User {
     String name;
     public int id;
     int age;
-    public ImageIcon profilePic;
+ 
     
     
     

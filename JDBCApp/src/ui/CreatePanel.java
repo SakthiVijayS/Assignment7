@@ -124,6 +124,7 @@ public class CreatePanel extends javax.swing.JPanel {
        // newUser.id=UUID.randomUUID().toString();
       //  newUser.profilePic = tempuser.profilePic;
         DatabaseConnector.addUser(newUser);
+        cleanup();
         } catch (Exception ex)  {
               JOptionPane.showMessageDialog(this, "Please enter correct details", "Error", HEIGHT);
         }
@@ -140,4 +141,9 @@ public class CreatePanel extends javax.swing.JPanel {
     private javax.swing.JLabel nameLabel;
     private javax.swing.JButton saveButton;
     // End of variables declaration//GEN-END:variables
+ public void cleanup(){
+     nameField.setText("");
+     ageField.setText("");
+ }
+
 }
